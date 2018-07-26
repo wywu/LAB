@@ -36,7 +36,7 @@ If you use this code or WFLW dataset for your research, please cite our papers.
 1. WFLW [Face Annotations](https://wywu.github.io/projects/LAB/support/WFLW_annotations.tar.gz)
 2. Unzip above two packages and put them on './datasets/WFLW/'
 
-Simply run this scripts to download annotations of WFLW
+Simply run this script to download annotations of WFLW
 ```bash
 #! ./scripts/download/download_wflw_annotation.sh
 bash ./scripts/download/download_wflw_annotation.sh WFLW
