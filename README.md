@@ -35,6 +35,7 @@ If you use this code or WFLW dataset for your research, please cite our papers.
 0. WFLW Training and Testing images [[Google Drive](https://drive.google.com/open?id=1hzBd48JIdWTJSsATBEB_eFVvPL1bx6UC)] [[Baidu Drive](https://pan.baidu.com/s/1paoOpusuyafHY154lqXYrA)]
 1. WFLW [Face Annotations](https://wywu.github.io/projects/LAB/support/WFLW_annotations.tar.gz)
 2. Unzip above two packages and put them on './datasets/WFLW/'
+
 Simply run this scripts to download annotations of WFLW
 ```bash
 #! ./scripts/download/download_wflw_annotation.sh
