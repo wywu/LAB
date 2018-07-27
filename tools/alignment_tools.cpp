@@ -208,7 +208,7 @@ int RunTestOnWFLW(void) {
 
   vector<vector<float>> predict_list(image_list.size());
   vector<bool> image_list_valid(image_list.size(), true);
-  SafeCounter counter(image_list.size(), 1000);
+  SafeCounter counter(image_list.size(), 10);
 #pragma omp parallel for num_threads(FLAGS_thread_num) schedule(static)
   for(size_t i=0;i<image_list.size();i++) {
     counter++;
