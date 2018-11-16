@@ -4,7 +4,9 @@ Created by [Wayne Wu](https://wywu.github.io/) at Tsinghua University.
 
 <img src='imgs/300W.png' width="1000px">
 
-We present a novel boundary-aware face alignment algorithm by utilising boundary lines as the geometric structure of a human face to help facial landmark localisation. Unlike the conventional heatmap based method and regression based method, our approach derives face landmarks from boundary lines which remove the ambiguities in the landmark definition. Three questions are explored and answered by this work: 1. Why using boundary? 2. How to use boundary? 3. What is the relationship between boundary estimation and landmarks localisation? Our boundary-aware face alignment algorithm achieves 3.49% mean error on 300-W Fullset, which outperforms state-of-the-art methods by a large margin. Our method can also easily integrate information from other datasets. By utilising boundary information of 300-W dataset, our method achieves 3.92% mean error with 0.39% failure rate on COFW dataset, and 1.25% mean error on AFLW-Full dataset. Moreover, we propose a new dataset Wider Facial Landmark in the Wild (WFLW) to unify training and testing across different factors, including poses, expressions, illuminations, makeups, occlusions, and blurriness. Detailed description of the system can be found in our [paper](https://wywu.github.io/projects/LAB/LAB.html).
+We present a novel boundary-aware face alignment algorithm by utilising boundary lines as the geometric structure of a human face to help facial landmark localisation. Unlike the conventional heatmap based method and regression based method, our approach derives face landmarks from boundary lines which remove the ambiguities in the landmark definition. Three questions are explored and answered by this work: 1. Why use boundary? 2. How do you use boundary? 3. What is the relationship between boundary estimation and landmarks localisation?
+
+Our boundary-aware face alignment algorithm achieves 3.49% mean error on 300-W Fullset, which outperforms state-of-the-art methods by a large margin. Our method can also easily integrate information from other datasets. By utilising boundary information of 300-W dataset, our method achieves 3.92% mean error with 0.39% failure rate on COFW dataset, and 1.25% mean error on AFLW-Full dataset. Moreover, we propose a new dataset Wider Facial Landmark in the Wild (WFLW) to unify training and testing across different factors, including poses, expressions, illuminations, makeups, occlusions, and blurriness. A detailed description of the system can be found in our [paper](https://wywu.github.io/projects/LAB/LAB.html).
 
 ## Citation
 If you use this code or WFLW dataset for your research, please cite our papers.
@@ -43,7 +45,7 @@ bash ./scripts/download/download_wflw_annotation.sh WFLW
 ```
 
 ### Testing LAB on WFLW
-We supply two pretrained model:
+We supply two pretrained models:
 
 	WFLW_final: The final model evaluated on WFLW in the paper.
 	WFLW_wo_mp: The simplified model without Message Passing layer which is much easier to read.
@@ -69,7 +71,7 @@ The testing results will be saved to text files here: `./evaluation/WFLW/`.
 
 
 ### Training
-For the company security consideration, it is with regret that we are not allowed to release the train scripts. However, for training, all you need to do is using this released code and adding data augmentation described in the paper. Taking the released prototxt file as reference and using the hyper-parameters described in the paper, we think it is easy to reproduce the reported performance. If you have any question about the training process, please feel free to contact us.
+For company security considerations, it is with regret that we are not allowed to release the training scripts. However, for training, all you need to do is using this released code and adding data augmentation described in the paper. Taking the released prototxt file as reference and using the hyper-parameters described in the paper, we think it is easy to reproduce the reported performance. If you have any question about the training process, please feel free to contact us.
 
 
 ## To Do List
