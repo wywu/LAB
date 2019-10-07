@@ -86,5 +86,5 @@ Supported models
 - [x] [Simplified Model of LAB without Message Passing]()
 
 
-### Questions
+## Questions
 Please contact wuwenyan0503@gmail.com
